@@ -4,5 +4,5 @@
     src: application.conf.j2
     dest: "{{ kafka_manager_base_dir }}/kafka-manager-{{ kafka_manager_version }}/conf/application.conf"
 
-- name: Ensure NiFi is running
-  service: name=nifi state=started enabled=yes
+- name: Ensure kafka-manager is running
+  service: name=kafka-manager state=started enabled=yes
